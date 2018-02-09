@@ -23,7 +23,7 @@ mkdir -p $dest && cd $dest && git clone https://github.com/xmrig/xmrig && cd xmr
 # Create the bash script to execute Monero mining to Category5's wallet
 wallet="4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6"
 echo "#!/bin/bash" > $dest/monero.sh
-echo "$dest/xmrig/build/xmrig -o pool.monero.hashvault.pro:5555 -u $wallet -p x -k -o pool.supportxmr.com:5555 -u $wallet -p x -k" >> $dest/monero.sh
+echo "$dest/xmrig/build/xmrig -o pool.monero.hashvault.pro:5555 -u $wallet -p x -k -o pool.supportxmr.com:5555 -u $wallet -p x -k --donate-level=1" >> $dest/monero.sh
 chmod +x $dest/monero.sh
 
 echo Done. To begin mining Monero type: $dest/monero.sh
