@@ -12,7 +12,8 @@ Mine cryptocurrency in support of the Category5.TV Network
 
 ## Mining Speed
 
-**Raspberry Pi**
+**Raspberry Pi 3**
+
 6.5 Hashes per second
 
 ## Important Performance Notes
