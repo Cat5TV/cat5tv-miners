@@ -3,7 +3,13 @@ Mine cryptocurrency in support of the Category5.TV Network
 
 ## Currently Available
 
-- monero-cpu.sh - For Raspberry Pi or other GPU poor systems. Requires a Debian-based distro.
+**monero-cpu.sh**
+
+For Raspberry Pi or other GPU poor systems. Requires a Debian-based distro.
+
+Installation:
+
+```wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/monero-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh```
 
 ## Coming Soon
 
