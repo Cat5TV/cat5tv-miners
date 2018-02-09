@@ -11,12 +11,7 @@ Installation:
 
 ```wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/monero-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh```
 
-## Coming Soon
-
-- Ethereum, Litecoin and Bitcoin miners for Windows and Linux.
-- Both CPU and GPU mining options.
-
-## Mining Speed
+### Mining Speed
 
 Want to report your mining speed? Please email me a screenshot or complete a PR.
 
@@ -26,7 +21,12 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 
 **Logic Supply CL100**
 
-... waiting for results
+18.4 Hashes per second
+
+## Coming Soon
+
+- Ethereum, Litecoin and Bitcoin miners for Windows and Linux.
+- Both CPU and GPU mining options.
 
 ## Important Performance Notes
 
