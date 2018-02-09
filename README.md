@@ -15,13 +15,8 @@ Installation:
 
 Want to report your mining speed? Please email me a screenshot or complete a PR.
 
-**Raspberry Pi 3**
-
-6.5 Hashes per second
-
-**Logic Supply CL100**
-
-18.4 Hashes per second
+- **Raspberry Pi 3:** 6.5 Hashes per second
+- **Logic Supply CL100:** 18.4 Hashes per second
 
 ## Coming Soon
 
