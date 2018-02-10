@@ -17,6 +17,8 @@ Point your miner to our wallet to support the Category5 TV Network:
 
 ## Currently Available Miners
 
+All you have to do is install one of these miners to support the Category5 TV Network! Each miner is pre-configured to mine cryptocurrency into the appropriate Category5 wallet.
+
 ### monero-cpu.sh
 
 This miner uses the system's CPU instead of the GPU, making it ideal for Raspberry Pi or other GPU poor systems. Requires a Debian-based distro.
