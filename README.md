@@ -1,6 +1,20 @@
 # cat5tv-miners
 Mine cryptocurrency in support of the Category5.TV Network
 
+## Already Mining?
+
+Point your miner to our wallet to support the Category5 TV Network:
+     
+    Bitcoin BTC: 195GBesssNtvs7nKAiNAvGXC4FJCDt9nfj
+     
+    Ethereum ETH: 0xFc412c637fB89a860209f448173AF1EB285458E9
+     
+    Lightcoin LTC: LMPPd9zcdmA6CN8XXmMsJGVbPYdqfPyKh6
+     
+    Monero XMR: 4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6
+
+
+
 ## Currently Available Miners
 
 ### monero-cpu.sh
