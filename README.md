@@ -3,13 +3,20 @@ Mine cryptocurrency in support of the Category5.TV Network
 
 ## Currently Available
 
-**monero-cpu.sh**
+###monero-cpu.sh
 
 For Raspberry Pi or other GPU poor systems. Requires a Debian-based distro.
 
-Installation:
+**Installation:**
 
-```wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/monero-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh```
+```
+wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/monero-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh
+```
+
+**Running Process**
+
+```xmrig```
+
 
 ### Mining Speed
 
@@ -23,6 +30,15 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 
 - Ethereum, Litecoin and Bitcoin miners for Windows and Linux.
 - Both CPU and GPU mining options.
+
+## Run Overnight
+
+An example of how you might run your miner from 11pm to 6am every day:
+
+```
+0 23 * * * /usr/local/share/cat5tv-miner/monero/monero.sh
+0 6 * * * killall -9 xmrig
+```
 
 ## Important Performance Notes
 
