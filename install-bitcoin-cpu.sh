@@ -28,7 +28,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/poo
 echo "#!/bin/bash" > $dest/$name.sh
 echo "cores=$(nproc --all)" >> $dest/$name.sh
 echo "let cores=cores-2" >> $dest/$name.sh
-echo "$dest/software/$name/minerd -- threads $cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
+echo "$dest/software/$name/minerd --threads=\$cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Bitcoin type: $dest/$name.sh
