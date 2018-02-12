@@ -1,6 +1,12 @@
 # cat5tv-miners
 Mine cryptocurrency in support of the Category5.TV Network
 
+Whether or not this will be a profitable venture is difficult to know.
+
+This writeup on Litecoin is discouraging: https://www.litecoinpool.org/beginners-guide#should-you-mine
+
+But this is, at the very least, a fun experiment.
+
 ## Already Mining?
 
 Point your miner to our wallet to support the Category5 TV Network:
