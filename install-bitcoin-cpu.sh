@@ -17,15 +17,17 @@ name=$(basename $0)
 name="${name%.*}"
 
 # Install dependencies
-#apt update && apt -y upgrade && apt -y dist-upgrade
-#apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
+apt update && apt -y upgrade && apt -y dist-upgrade
+apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
 
 # Build cpuminer
 mkdir -p $dest/software && cd $dest/software && git clone https://github.com/pooler/cpuminer && mv cpuminer $name && cd $name && ./autogen.sh && ./configure CFLAGS="-O3" && make
 
 # Create the bash script to execute mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "$dest/software/$name/minerd -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
+echo "cores=$(nproc --all)" >> $dest/$name.sh
+echo "let cores=cores-2" >> $dest/$name.sh
+echo "$dest/software/$name/minerd -- threads $cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Bitcoin type: $dest/$name.sh
