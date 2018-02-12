@@ -27,7 +27,11 @@ All you have to do is install one of these miners to support the Category5 TV Ne
 
 ### Monero CPU Mining
 
+#### Recommended
+
 This miner uses the system's CPU instead of the GPU, making it ideal for systems that lack a powerful GPU. Requires a Debian-based distro.
+
+Monero is still viable for CPU mining, and may in fact turn a profit over time.
 
 **Currency:** Monero
 
@@ -63,7 +67,11 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 
 ### Bitcoin CPU Mining
 
+#### Not Recommended
+
 This miner uses the system's CPU instead of the GPU, making it ideal for systems that lack a powerful GPU. Requires a Debian-based distro.
+
+Bitcoin mining is extremely competetive, and unless you have an ASIC, it will likely be unprofitable.
 
 **Currency:** Bitcoin
 
