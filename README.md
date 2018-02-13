@@ -40,7 +40,7 @@ Monero is still viable for CPU mining, and may in fact turn a profit over time.
 **Installation:**
 
 ```
-wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh
+wget -O /tmp/install-monero-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
 ```
 **Execution:**
 
@@ -82,7 +82,7 @@ Bitcoin mining is extremely competetive, and unless you have an ASIC, it will li
 **Installation:**
 
 ```
-wget -O /tmp/cat5tv-miners-install.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/cat5tv-miners-install.sh && sudo /tmp/cat5tv-miners-install.sh
+wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
 ```
 **Execution:**
 
