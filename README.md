@@ -65,7 +65,7 @@ An example of how you might run your miner from 11pm to 6am every day:
 
 ```
 0 23 * * * /usr/local/share/cat5tv-miner/monero-cpu.sh
-0 6 * * * killall -9 xmrig
+0 6 * * * kill -HUP `pidof xmrig`
 ```
 
 **Mining Speed:**
@@ -109,7 +109,7 @@ An example of how you might run your miner from 11pm to 6am every day:
 
 ```
 0 23 * * * /usr/local/share/cat5tv-miner/bitcoin-cpu.sh
-0 6 * * * killall -9 cpuminer
+0 6 * * * kill -HUP `pidof cpuminer`
 ```
 
 ## Coming Soon
