@@ -109,6 +109,8 @@ An example of how you might run your miner from 11pm to 6am every day:
 
 ## Important Performance Notes
 
+You may run one CPU miner and one GPU miner at a time, but cannot run two of the same type simultaneously. Running more than one of the same type should not be done. But combining GPU + CPU mining (if your system can handle it) will improve your hash rate. cat5tv-miners will automatically leave 1-2 CPU cores free for GPU mining on systems with 8 CPU cores or more.
+
 CPU Miners will, by default, use a large amount of your CPU power for cryptocurrency mining. Therefore, it's best to run them when you do not need to use the computer for other high-cpu tasks such as gaming or encoding video. A powerful desktop computer can probably handle running mining in the background while you surf the web and do general tasks, but something like a Raspberry Pi will be on its knees begging you to not open any other applications.
 
 On Linux, you can optionally change the priority of the miner very easily. Simply prepend nice -n 9 to your command. So if you are running /usr/local/share/cat5tv-miners/monero-cpu.sh you can instead run nice -n 9 /usr/local/share/cat5tv-miners/monero-cpu.sh

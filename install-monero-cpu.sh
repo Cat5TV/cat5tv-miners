@@ -29,8 +29,11 @@ wallet="4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcS
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
+echo "if [ \"\$cores\" -ge \"8\" ]; then
+  let cores=cores-1 # Leave 1 core free for GPU mining
+fi" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"12\" ]; then
-  let cores=cores-2
+  let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
 echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:\$port -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
