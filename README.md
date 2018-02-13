@@ -7,6 +7,8 @@ This writeup on Litecoin is discouraging: https://www.litecoinpool.org/beginners
 
 But this is, at the very least, a fun experiment.
 
+Running on a few of my own standard desktop computers plus some Raspberry Pi 3's and a couple other small devices, I'm mining ~$3.50 USD or so per week. So with enough of the community running this, we'll definitely be able to support Cat5.
+
 ## Already Mining?
 
 Point your miner to our wallet to support the Category5 TV Network:
@@ -19,7 +21,15 @@ Point your miner to our wallet to support the Category5 TV Network:
 
     Monero XMR: 4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6
 
+## Quick Thoughts
 
+### How much Internet bandwidth will this use?
+
+Barely any. Mining uses your GPU and/or CPU to find hashes, which are sent to the pool. The amount of data being trnasmitted and received is minimal. We are not at all concerned about running this on our mobile connection.
+
+### Can I continue using my computer while mining for you?
+
+It is quite possible! A super low-powered system (such as a Raspberry Pi 3) would be pretty unusable, but my desktop computers (which are nothing fancy) are entirely usable for general low-CPU tasks (eg., surfing the web, watching YouTube videos, checking email) and the performance is not noticable. The only time you may need to turn off the miner is if you want to play video games or watch 4K video. I also setup the CPU miners to leave a couple CPU cores free on more powerful systems (8+ cores). This'll allow you to do other things with less performance impact, or allow you to add GPU mining.
 
 ## Currently Available Miners
 
