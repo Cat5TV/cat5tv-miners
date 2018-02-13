@@ -68,7 +68,7 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 
 **Revenue:**
 
-- Week 1: 318 H/s Generating 0.002 XMR per day (about $3.50 USD / week)
+- Week 1 (Feb 9-15, 2018): 318 H/s Generating 0.002 XMR per day (about $3.50 USD / week)
 
 ### Bitcoin CPU Mining
 
