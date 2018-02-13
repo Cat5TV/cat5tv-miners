@@ -15,7 +15,7 @@ dest="/usr/local/share/cat5tv-miner" # No trailing slash
 
 name=$(basename $0)
 name="${name%.*}"
-name=${name#install-}
+name="${name#install-}"
 
 # Install dependencies
 apt update && apt -y upgrade && apt -y dist-upgrade
