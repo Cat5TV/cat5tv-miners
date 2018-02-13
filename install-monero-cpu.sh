@@ -28,9 +28,9 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 wallet="4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6"
 echo "#!/bin/bash" > $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
-if [[ $cores -ge 12 ]]; then
-  echo "let cores=cores-2" >> $dest/$name.sh
-fi
+echo "if [[ $cores -ge 12 ]]; then \
+  echo \"let cores=cores-2\" \
+fi" >> $dest/$name.sh
 echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:3333 -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
