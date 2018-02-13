@@ -31,7 +31,7 @@ All you have to do is install one of these miners to support the Category5 TV Ne
 
 This miner uses the system's CPU instead of the GPU, making it ideal for systems that lack a powerful GPU. Requires a Debian-based distro.
 
-Monero is still viable for CPU mining, and may in fact turn a profit over time.
+Monero is quite viable for CPU mining and should turn a profit over time.
 
 **Currency:** Monero
 
@@ -63,7 +63,9 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 - **Logic Supply CL100:** 18.4 Hashes per second
 - **ODROID XU4Q:** 22.7 Hashes per second
 
+**Revenue:**
 
+- Week 1: 318 H/s Generating 0.002 XMR per day (about $3.50 USD / week)
 
 ### Bitcoin CPU Mining
 
