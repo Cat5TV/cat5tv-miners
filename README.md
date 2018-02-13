@@ -35,6 +35,8 @@ Monero is quite viable for CPU mining and should turn a profit over time.
 
 **Currency:** Monero
 
+**Mining Pool:** Hash Vault
+
 **Running Process Name:** xmrig
 
 **Installation:**
@@ -42,6 +44,7 @@ Monero is quite viable for CPU mining and should turn a profit over time.
 ```
 wget -O /tmp/install-monero-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
 ```
+
 **Execution:**
 
 /usr/local/share/cat5tv-miners/monero-cpu.sh
