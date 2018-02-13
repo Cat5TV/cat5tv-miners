@@ -27,11 +27,13 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 # Create the bash script to execute Monero mining to Category5's wallet
 wallet="4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6"
 echo "#!/bin/bash" > $dest/$name.sh
+echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-2
+  port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:3333 -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:\$port -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Monero type: $dest/$name.sh
