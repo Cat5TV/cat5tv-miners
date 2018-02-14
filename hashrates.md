@@ -29,3 +29,8 @@ Please list your results and order from smallest to largest hashrate, inter-mixe
 **System:** ODROID XU4Q running Ubuntu Mate 16.04
 **Miner:** monero-cpu.sh
 **H/s:** 22.7 H/s
+
+**User:** BaldNerd
+**System:** Desktop PC, Intel i7 2600K running Windows 10
+**Miner:** monero-cpu for Windows
+**H/s:** 112.4 H/s
