@@ -5,8 +5,11 @@
 Please conform to the following format:
 
 **User:** A nickname or name to refer to you as. Eg., BaldNerd
+
 **System:** A friendly name describing system specs. Eg., "Raspberry Pi 3" or "i7 3600K with RX 560 4GB GPU.
+
 **Miner:** Name of miner you are using. Eg., monero-cpu.sh
+
 **H/s:** Average hashes per second as reported within the miner. Try to be as accurate as possible (ie., don't list the maximum you hit. Instead, use the averages).
 
 Want to report your mining speed? Please email me a screenshot or complete a PR.
