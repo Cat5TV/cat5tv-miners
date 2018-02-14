@@ -15,22 +15,30 @@ Want to report your mining speed? Please email me a screenshot or complete a PR.
 
 Please list your results and order from smallest to largest hashrate, inter-mixed with other user results.
 
-**User:** BaldNerd
-**System:** Raspberry Pi 3 running Raspbian Stretch
-**Miner:** monero-cpu.sh
-**H/s:** 6.5 H/s
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
+**System:** | Raspberry Pi 3 running Raspbian Stretch
+**Miner:** | monero-cpu.sh
+**H/s:** | 6.5 H/s
 
-**User:** BaldNerd
-**System:** Logic Supply CL100 running Debian Stretch
-**Miner:** monero-cpu.sh
-**H/s:** 18.4 H/s
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
+**System:** | Logic Supply CL100 running Debian Stretch
+**Miner:** | monero-cpu.sh
+**H/s:** | 18.4 H/s
 
-**User:** BaldNerd
-**System:** ODROID XU4Q running Ubuntu Mate 16.04
-**Miner:** monero-cpu.sh
-**H/s:** 22.7 H/s
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
+**System:** | ODROID XU4Q running Ubuntu Mate 16.04
+**Miner:** | monero-cpu.sh
+**H/s:** | 22.7 H/s
 
-**User:** BaldNerd
-**System:** Desktop PC, Intel i7 2600K running Windows 10
-**Miner:** monero-cpu for Windows
-**H/s:** 112.4 H/s
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
+**System:** | Desktop PC, Intel i7 2600K running Windows 10
+**Miner:** | monero-cpu for Windows
+**H/s:** | 112.4 H/s
