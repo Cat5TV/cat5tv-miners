@@ -11,7 +11,7 @@ if [[ $EUID -ne 0 ]]; then
 else
 
 dest="/usr/local/share/cat5tv-miner" # No trailing slash
-wallet=$(cat wallets/cat5tv-monero)
+wallet=$(wget -qO- https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/wallets/cat5tv-monero)
 
 name=$(basename $0)
 name="${name%.*}"
