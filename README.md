@@ -1,13 +1,11 @@
 # cat5tv-miners
 Mine cryptocurrency in support of the Category5.TV Network
 
-Whether or not this will be a profitable venture is difficult to know.
+**Our focus is on Monero** because it can be mined using consumer hardware (ie., CPU / GPU mining). [Litecoin cannot be mined by this method](https://www.litecoinpool.org/beginners-guide#should-you-mine) and we suspect the same is pretty much true with BitCoin, although I have included a CPU miner for BitCoin as a proof of concept.
 
-This writeup on Litecoin is discouraging: https://www.litecoinpool.org/beginners-guide#should-you-mine
+In my initial tests I ran cat5tv-miners on a few of my own standard desktop computers plus some Raspberry Pi 3's and a couple other small devices and was mining ~$3.50 USD or so per week. So with enough of the community running this, we'll definitely be able to support Cat5.
 
-But this is, at the very least, a fun experiment.
-
-Running on a few of my own standard desktop computers plus some Raspberry Pi 3's and a couple other small devices, I'm mining ~$3.50 USD or so per week. So with enough of the community running this, we'll definitely be able to support Cat5.
+You can run the miner or cancel it at any time. If it affects performance, you can close it and go about your work and then open it when your computer would otherwise be idle. Though on my computers I find I'm still able to continue using the computer just fine when running the CPU miner. The GPU miner tends to take over the graphics, so my compositor locks up while it is running.
 
 ## Already Mining?
 
@@ -19,9 +17,17 @@ Point your miner to our wallet to support the Category5 TV Network:
 
     Lightcoin LTC: LMPPd9zcdmA6CN8XXmMsJGVbPYdqfPyKh6
 
-    Monero XMR: 4Ao8jximsZ5hkRLP6tHHfuiBFmd6nzb1VeL1btdeBDZ8N3LpFZVk3LiBiL5T1yoXtaftqHcSKE5YQdQNpizFRyYVFUfMiZ6
+    Monero XMR: 45Pp6nKwfHwXegzi7DiLGZFKSs2doNXJbGS1d5Dej9VJNhcShW7XYysHGS7zSTSwToSWs3nQxtzweW8ajRvoWTLKTwmGY3a
 
 ## Quick Thoughts
+
+### CPU vs GPU
+
+A CPU miner uses the system's CPU cores instead of the GPU (graphics card) cores, making it ideal for systems that lack a powerful GPU. This makes mining possible on lesser systems like a Raspberry Pi 3, but also can provide a very good hashrate on desktop computers as well.
+
+GPU miners use the graphics card, which often have many more cores than the CPU, which can lead to a higher hashrate on systems that have powerful GPUs.
+
+A CPU miner and GPU miner can be used simultaneously to maximize the hashrate. Eg., if you get 50 H/s on the CPU and 75 H/s on the GPU, running them together will provide a hashrate of 125 H/s.
 
 ### How much Internet bandwidth will this use?
 
@@ -29,56 +35,50 @@ Barely any. Mining uses your GPU and/or CPU to find hashes, which are sent to th
 
 ### Can I continue using my computer while mining for you?
 
-It is quite possible! A super low-powered system (such as a Raspberry Pi 3) would be pretty unusable, but my desktop computers (which are nothing fancy) are entirely usable for general low-CPU tasks (eg., surfing the web, watching YouTube videos, checking email) and the performance is not noticable. The only time you may need to turn off the miner is if you want to play video games or watch 4K video. I also setup the CPU miners to leave a couple CPU cores free on more powerful systems (8+ cores). This'll allow you to do other things with less performance impact, or allow you to add GPU mining.
+Yes! A super low-powered system (such as a Raspberry Pi 3) would be pretty unusable, but my desktop computers (which are nothing fancy) are entirely usable for general low-CPU tasks (eg., surfing the web, watching YouTube videos, checking email) and the performance is not noticable. Even my HTPC can mine Monero and play Plex videos without issue. The only time you may need to turn off the miner is if you want to play video games or watch 4K video. You can gauge this on your system. I also setup the CPU miners to leave a couple CPU cores free on more powerful systems (8+ cores). This'll allow you to do other things with less performance impact, or allow you to add GPU mining.
 
 ## Currently Available Miners
 
 All you have to do is install one of these miners to support the Category5 TV Network! Each miner is pre-configured to mine cryptocurrency into the appropriate Category5 wallet.
 
-### Monero CPU Mining
+### Monero Mining
 
 #### Recommended
 
-This miner uses the system's CPU instead of the GPU, making it ideal for systems that lack a powerful GPU. Requires a Debian-based distro.
-
-Monero is quite viable for CPU mining and should turn a profit over time.
+Monero is quite viable for mining using consumer gear, and should turn a profit over time.
 
 **Currency:** Monero
 
 **Mining Pool:** Hash Vault
 
-**Running Process Name:** xmrig
-
 **Installation:**
 
+Monero CPU for Linux
 ```
 wget -O /tmp/install-monero-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
+```
+Monero NVIDIA GPU on Linux
+```
+wget -O /tmp/install-monero-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-nvidia.sh && chmod +x /tmp/install-monero-gpu-nvidia.sh && sudo /tmp/install-monero-gpu-nvidia.sh
+```
+Monero AMD GPU on Linux
+```
+wget -O /tmp/install-monero-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-amd.sh && chmod +x /tmp/install-monero-gpu-amd.sh && sudo /tmp/install-monero-gpu-amd.sh
 ```
 
 **Execution:**
 
-/usr/local/share/cat5tv-miners/monero-cpu.sh
+The installer will add a bash script to **/usr/local/share/cat5tv-miners/** to begin mining.
 
 **Run Overnight:**
 
-An example of how you might run your miner from 11pm to 6am every day:
+An example of how you might run your miner from 11pm to 6am every day. In this example we're using Monero mining on CPU.
 
 ```
-0 23 * * * /usr/local/share/cat5tv-miner/monero-cpu.sh
-0 6 * * * kill -HUP `pidof xmrig`
+59 22 * * * kill -HUP `pidof xmrig` # It may not be running, but just in case you manually ran it, don't run a second copy.
+0 23 * * * /usr/local/share/cat5tv-miner/monero-cpu.sh # Execute the script
+0 6 * * * kill -HUP `pidof xmrig` # Stop mining at 6am
 ```
-
-**Mining Speed:**
-
-Want to report your mining speed? Please email me a screenshot or complete a PR.
-
-- **Raspberry Pi 3:** 6.5 Hashes per second
-- **Logic Supply CL100:** 18.4 Hashes per second
-- **ODROID XU4Q:** 22.7 Hashes per second
-
-**Revenue:**
-
-- Week 1 (Feb 9-15, 2018): 318 H/s Generating 0.002 XMR per day (about $3.50 USD / week)
 
 ### Bitcoin CPU Mining
 
@@ -111,11 +111,6 @@ An example of how you might run your miner from 11pm to 6am every day:
 0 23 * * * /usr/local/share/cat5tv-miner/bitcoin-cpu.sh
 0 6 * * * kill -HUP `pidof cpuminer`
 ```
-
-## Coming Soon
-
-- Ethereum and Litecoin miners.
-- Both CPU and GPU mining options for all currencies.
 
 ## Important Performance Notes
 
