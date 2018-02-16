@@ -18,7 +18,7 @@ name="${name%.*}"
 name=${name#install-}
 
 # Install dependencies
-apt update && apt -y upgrade && apt -y dist-upgrade
+apt update
 apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
 
 # Build cpuminer
