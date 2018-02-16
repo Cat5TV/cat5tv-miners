@@ -19,7 +19,7 @@ name=${name#install-}
 
 # Install dependencies
 apt update
-apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
+apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev opencl-headers
 
 # Build XMRIG
 mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig-amd && mv xmrig-amd $name && cd $name && cmake . && make
