@@ -21,6 +21,10 @@ Point your miner to our wallet to support the Category5 TV Network:
 
 ## Quick Thoughts
 
+### Start with CPU
+
+New to mining? The CPU miner is dead simple to get up and running. Start there. Get it working first. Add GPU mining second.
+
 ### CPU vs GPU
 
 A CPU miner uses the system's CPU cores instead of the GPU (graphics card) cores, making it ideal for systems that lack a powerful GPU. This makes mining possible on lesser systems like a Raspberry Pi 3, but also can provide a very good hashrate on desktop computers as well.
