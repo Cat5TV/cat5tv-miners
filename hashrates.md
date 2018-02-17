@@ -60,3 +60,10 @@ Heading | Response
 **Miner:** | monero-gpu-nvidia for Linux
 **H/s:** | 168.9 H/s
 
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
+**System:** | AMD Aero ITX RX560 4GB on Windows 10
+**Miner:** | monero-gpu-ati for Windows
+**H/s:** | 327.7 H/s
+
