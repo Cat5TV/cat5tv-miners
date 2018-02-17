@@ -1,4 +1,5 @@
 {
+    "opencl-platform": 0,
     "algo": "cryptonight",
     "av": 0,
     "background": false,
