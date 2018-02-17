@@ -128,5 +128,4 @@ When running the miner in the Linux terminal, you can abort it by simply pressin
 
 ## Tips
 
-If GPU mining with both a NVIDIA and ATI GPU at the same time, you can add this to the config.json to select the second GPU:
-```"opencl-platform": 1,```
+If GPU mining with both a NVIDIA and ATI GPU at the same time, you can edit config.json to select the second GPU. The line `"opencl-platform": 0,` represents the GPU. 0 being the first. Change that to 1 to select your second GPU.
