@@ -125,3 +125,8 @@ CPU Miners will, by default, use a large amount of your CPU power for cryptocurr
 On Linux, you can optionally change the priority of the miner very easily. Simply prepend nice -n 9 to your command. So if you are running /usr/local/share/cat5tv-miners/monero-cpu.sh you can instead run nice -n 9 /usr/local/share/cat5tv-miners/monero-cpu.sh
 
 When running the miner in the Linux terminal, you can abort it by simply pressing CTRL-C.
+
+## Tips
+
+If GPU mining with both a NVIDIA and ATI GPU at the same time, you can add this to the config.json to select the second GPU:
+```"opencl-platform": 1,```
