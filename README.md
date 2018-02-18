@@ -86,7 +86,11 @@ An example of how you might run your miner from 11pm to 6am every day. In this e
 
 #### For Microsoft Windows
 
-Coming soon!
+As you've no doubt heard on the news, bad players have been integrating cryptocurrency mining into their viruses. This has had an unfortunate impact for legitimate miners in that Windows antimalware software will now report legitimate (non virus) cryptomining software as viruses. Because of this, you must first create an exclusion in order to install cat5tv-miners on Windows.
+
+First, create a folder (say, on your desktop) and call it *cat5tv-mining* to make it easy to remember. Then, in your antivirus program, exclude that folder. Then download [this file](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-x64.exe) into that folder. If you're using Chrome you may have to temporarily disable "Protect you and your device from dangerous sites" if it blocks it. Then, run the installer from within the excluded folder. When asked where you'd like to install, you must also choose that excluded folder.
+
+cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmrig-amd/issues/23) for more information.
 
 ### Bitcoin CPU Mining
 
