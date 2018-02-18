@@ -28,7 +28,7 @@ UninstPage instfiles
 ;--------------------------------
 
 ; The stuff to install
-Section "cat5tv-miners Monero CPU Miner"
+Section "cat5tv-miners Monero GPU Miner (NVIDIA CUDA 8)"
 
   SectionIn RO
   
@@ -43,7 +43,7 @@ Section "cat5tv-miners Monero CPU Miner"
   WriteRegStr HKLM SOFTWARE\cat5tv-miners-gpu-nvidia-cuda8 "Install_Dir" "$INSTDIR"
   
   ; Write the uninstall keys for Windows
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cat5tv-miners-gpu-nvidia-cuda8" "DisplayName" "cat5tv-miners Monero CPU Miner"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cat5tv-miners-gpu-nvidia-cuda8" "DisplayName" "cat5tv-miners Monero GPU Miner (NVIDIA CUDA 8)"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cat5tv-miners-gpu-nvidia-cuda8" "UninstallString" '"$INSTDIR\uninstall.exe"'
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cat5tv-miners-gpu-nvidia-cuda8" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cat5tv-miners-gpu-nvidia-cuda8" "NoRepair" 1
@@ -56,7 +56,7 @@ Section "Start Menu Shortcuts"
 
   CreateDirectory "$SMPROGRAMS\cat5tv-miners-gpu-nvidia-cuda8"
   CreateShortcut "$SMPROGRAMS\cat5tv-miners-gpu-nvidia-cuda8\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "$INSTDIR\uninstall.exe" 0
-  CreateShortcut "$SMPROGRAMS\cat5tv-miners-gpu-nvidia-cuda8\cat5tv-miners Monero CPU Miner.lnk" "$INSTDIR\xmrig-nvidia.exe" "" "$INSTDIR\xmrig-nvidia.exe" 0
+  CreateShortcut "$SMPROGRAMS\cat5tv-miners-gpu-nvidia-cuda8\cat5tv-miners Monero GPU Miner (NVIDIA CUDA 8).lnk" "$INSTDIR\xmrig-nvidia.exe" "" "$INSTDIR\xmrig-nvidia.exe" 0
   
 SectionEnd
 
