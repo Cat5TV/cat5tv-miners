@@ -94,7 +94,7 @@ At that point, if a screen pops up saying "Windows Defender SmartScreen prevente
 
 Here are the installers for Windows:
  * [cat5tv-miners for CPU](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-x64.exe)
- * [cat5tv-miners for GPU NVIDIA CUDA 8]https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda8.exe)
+ * [cat5tv-miners for GPU NVIDIA CUDA 8](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda8.exe)
 
 cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmrig-amd/issues/23) for more information.
 
