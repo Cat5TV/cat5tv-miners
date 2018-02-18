@@ -90,6 +90,8 @@ As you've no doubt heard on the news, bad players have been integrating cryptocu
 
 First, create a folder (say, on your desktop) and call it *cat5tv-mining* to make it easy to remember. Then, in your antivirus program, exclude that folder. Then download [this file](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-x64.exe) into that folder. If you're using Chrome you may have to temporarily disable "Protect you and your device from dangerous sites" if it blocks it. Then, run the installer from within the excluded folder. When asked where you'd like to install, you must also choose that excluded folder.
 
+At that point, if a screen pops up saying "Windows Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk." press "More Info" and "Run Anyway".
+
 cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmrig-amd/issues/23) for more information.
 
 ### Bitcoin CPU Mining
