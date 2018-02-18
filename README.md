@@ -55,7 +55,7 @@ Monero is quite viable for mining using consumer gear, and should turn a profit 
 
 **Installation:**
 
-#### For Linux
+#### Monero Mining For Linux
 
 Monero CPU miner for Linux
 ```
@@ -84,7 +84,7 @@ An example of how you might run your miner from 11pm to 6am every day. In this e
 0 6 * * * kill -HUP `pidof xmrig` # Stop mining at 6am
 ```
 
-#### For Microsoft Windows
+#### Monero Mining For Microsoft Windows
 
 As you've no doubt heard on the news, bad players have been integrating cryptocurrency mining into their viruses. This has had an unfortunate impact for legitimate miners in that Windows antimalware software will now report legitimate (non virus) cryptomining software as viruses. Because of this, you must first create an exclusion in order to install cat5tv-miners on Windows.
 
