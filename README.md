@@ -47,15 +47,15 @@ All you have to do is install one of these miners to support the Category5 TV Ne
 
 ### Monero Mining
 
-#### Recommended
-
-Monero is quite viable for mining using consumer gear, and should turn a profit over time.
+Monero is quite viable for mining using consumer gear, and should turn a profit over time. Therefore, *we recommend using our Monero miners to maximize results*.
 
 **Currency:** Monero
 
 **Mining Pool:** Hash Vault
 
 **Installation:**
+
+#### For Linux
 
 Monero CPU for Linux
 ```
@@ -83,6 +83,10 @@ An example of how you might run your miner from 11pm to 6am every day. In this e
 0 23 * * * /usr/local/share/cat5tv-miner/monero-cpu.sh # Execute the script
 0 6 * * * kill -HUP `pidof xmrig` # Stop mining at 6am
 ```
+
+#### For Microsoft Windows
+
+Coming soon!
 
 ### Bitcoin CPU Mining
 
