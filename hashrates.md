@@ -49,6 +49,13 @@ Heading | Response
 Heading | Response
 ------------ | -------------
 **User:** | BaldNerd
+**System:** | Quadro 4000 @ 950/1404 MHz on Ubuntu 16.04
+**Miner:** | monero-gpu-nvidia for Linux
+**H/s:** | 168.9 H/s
+
+Heading | Response
+------------ | -------------
+**User:** | BaldNerd
 **System:** | Desktop PC, Intel i7 2600K running Windows 10
 **Miner:** | monero-cpu for Windows
 **H/s:** | 112.4 H/s
@@ -56,9 +63,9 @@ Heading | Response
 Heading | Response
 ------------ | -------------
 **User:** | BaldNerd
-**System:** | Quadro 4000 @ 950/1404 MHz on Ubuntu 16.04
+**System:** | GeForce GTX 660 @ 1110/3004 MHz on Ubuntu 16.04
 **Miner:** | monero-gpu-nvidia for Linux
-**H/s:** | 168.9 H/s
+**H/s:** | 194.7 H/s
 
 Heading | Response
 ------------ | -------------
