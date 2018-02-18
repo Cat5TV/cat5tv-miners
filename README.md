@@ -57,15 +57,15 @@ Monero is quite viable for mining using consumer gear, and should turn a profit 
 
 #### For Linux
 
-Monero CPU for Linux
+Monero CPU miner for Linux
 ```
 wget -O /tmp/install-monero-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
 ```
-Monero NVIDIA GPU on Linux
+Monero NVIDIA GPU miner for Linux
 ```
 wget -O /tmp/install-monero-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-nvidia.sh && chmod +x /tmp/install-monero-gpu-nvidia.sh && sudo /tmp/install-monero-gpu-nvidia.sh
 ```
-Monero AMD GPU on Linux
+Monero AMD GPU miner for Linux
 ```
 wget -O /tmp/install-monero-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-amd.sh && chmod +x /tmp/install-monero-gpu-amd.sh && sudo /tmp/install-monero-gpu-amd.sh
 ```
