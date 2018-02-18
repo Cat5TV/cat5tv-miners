@@ -1,0 +1,23 @@
+{
+    "opencl-platform": 0,
+    "algo": "cryptonight",
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": "cat5-miners.log",
+    "max-cpu-usage": 90,
+    "print-time": 60,
+    "retries": 60,
+    "retry-pause": 30,
+    "safe": false,
+    "pools": [
+        {
+            "url": "pool.monero.hashvault.pro:5555",
+            "user": "45Pp6nKwfHwXegzi7DiLGZFKSs2doNXJbGS1d5Dej9VJNhcShW7XYysHGS7zSTSwToSWs3nQxtzweW8ajRvoWTLKTwmGY3a",
+            "pass": "cat5tv",
+            "keepalive": true,
+            "nicehash": false
+        }
+    ]
+}
