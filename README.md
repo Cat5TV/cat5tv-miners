@@ -43,7 +43,7 @@ Yes! A super low-powered system (such as a Raspberry Pi 3) would be pretty unusa
 
 ## Currently Available Miners
 
-All you have to do is install one of these miners to support the Category5 TV Network! Each miner is pre-configured to mine cryptocurrency into the appropriate Category5 wallet.
+All you have to do is install one or more of these miners to support the Category5 TV Network! Each miner is pre-configured to mine cryptocurrency into the appropriate Category5 wallet.
 
 ### Monero Mining
 
