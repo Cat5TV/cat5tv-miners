@@ -1,9 +1,9 @@
 #!/bin/bash
-# Mine Monero in support of the Category5 TV Network
+# Mine Turtlecoin in support of the Category5 TV Network
 # Family-friendly broadcasting from Canada
 # See https://category5.tv/
 
-# This script installs Monero CPU mining on a Debian-based Linux system
+# This script installs Turtlecoin CPU mining on a Debian-based Linux system
 # This build does not use the GPU and is therefore perfect for older hardware or Raspberry Pi
 
 if [[ $EUID -ne 0 ]]; then
@@ -12,7 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 else
 
 dest="/usr/local/share/cat5tv-miners" # No trailing slash
-wallet=$(wget -qO- https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/wallets/cat5tv-monero)
+wallet=$(wget -qO- https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/wallets/cat5tv-turtlecoin)
 
 name=$(basename $0)
 name="${name%.*}"
@@ -36,7 +36,7 @@ echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:\$port -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --threads=\$cores -o ny.minetrtl.us:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Monero type: $dest/$name.sh

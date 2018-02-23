@@ -11,7 +11,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
-dest="/usr/local/share/cat5tv-miner" # No trailing slash
+dest="/usr/local/share/cat5tv-miners" # No trailing slash
 
 name=$(basename $0)
 name="${name%.*}"
