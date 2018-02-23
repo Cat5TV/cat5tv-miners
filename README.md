@@ -106,7 +106,7 @@ cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmr
 
 TRTL is now supported!
 
-Turtlecoin is very viable for mining using consumer gear, and should turn a profit over time. Because it is so new and there are so many Turtlecoin available, we are guaranteed to get coin even if you are using very low-end hardware such as a Raspberry Pi 3.
+Turtlecoin is very viable for mining using consumer gear, and should turn a profit over time. Because it is so new and there are so many Turtlecoin available, we are guaranteed to get coin even if you are using very low-end hardware such as a Raspberry Pi 3. As TRTL gains in popularity, it could become worth more, meaning the coins we mine today may end up being worth someone in the future.
 
 **Currency:** Turtlecoin
 
