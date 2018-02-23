@@ -18,6 +18,8 @@ Point your miner to our wallet to support the Category5 TV Network:
     Lightcoin LTC: LMPPd9zcdmA6CN8XXmMsJGVbPYdqfPyKh6
 
     Monero XMR: 45Pp6nKwfHwXegzi7DiLGZFKSs2doNXJbGS1d5Dej9VJNhcShW7XYysHGS7zSTSwToSWs3nQxtzweW8ajRvoWTLKTwmGY3a
+    
+    Turtlecoin TRTL: TRTLv1jdGp39FVqQRAgwM1jPyV2ZjhELDinfjEypobvP4Sbfr58aLjZ1kmoaen1Rr292h9zP9V8uB8GV7iHnEXyrjeFGZFsFERf
 
 ## Quick Thoughts
 
@@ -99,6 +101,10 @@ Here are the installers for Windows:
  * [cat5tv-miners for GPU NVIDIA CUDA 9 (newer cards)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda9.exe)
 
 cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmrig-amd/issues/23) for more information.
+
+### Turtlecoin Mining
+
+TRTL is now supported!
 
 ### Bitcoin CPU Mining
 
