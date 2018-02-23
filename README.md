@@ -106,6 +106,21 @@ cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmr
 
 TRTL is now supported!
 
+Turtlecoin is very viable for mining using consumer gear, and should turn a profit over time. Because it is so new and there are so many Turtlecoin available, we are guaranteed to get coin even if you are using very low-end hardware such as a Raspberry Pi 3.
+
+**Currency:** Turtlecoin
+
+**Mining Pool:** ny.minetrtl.us
+
+**Installation:**
+
+#### Turtlecoin Mining For Linux
+
+Turtlecoin CPU miner for Linux
+```
+wget -O /tmp/install-trtl-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-trtl-cpu.sh && chmod +x /tmp/install-trtl-cpu.sh && sudo /tmp/install-trtl-cpu.sh
+```
+
 ### Bitcoin CPU Mining
 
 #### Not Recommended
