@@ -110,7 +110,7 @@ Turtlecoin is very viable for mining using consumer gear, and should turn a prof
 
 **Currency:** Turtlecoin
 
-**Mining Pool:** ny.minetrtl.us
+**Mining Pool:** turtle.mining.garden
 
 **Installation:**
 
@@ -118,7 +118,7 @@ Turtlecoin is very viable for mining using consumer gear, and should turn a prof
 
 Turtlecoin CPU miner for Linux
 ```
-wget -O /tmp/install-trtl-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-trtl-cpu.sh && chmod +x /tmp/install-trtl-cpu.sh && sudo /tmp/install-trtl-cpu.sh
+wget -O /tmp/install-turtlecoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-cpu.sh && chmod +x /tmp/install-turtlecoin-cpu.sh && sudo /tmp/install-turtlecoin-cpu.sh
 ```
 
 ### Bitcoin CPU Mining
