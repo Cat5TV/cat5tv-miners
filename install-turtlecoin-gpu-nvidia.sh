@@ -29,7 +29,7 @@ sudo apt-get install gcc-5 g++-5
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 
 # Build XMRIG
-mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig-nvidia && mv xmrig-nvidia $name && cd $name && cmake . && cd src && grep -rl --include="*.cpp" "std::isnormal" | xargs sed -i 's/std::isnormal/isnormal/g' && cd .. && make
+mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig-nvidia && mv xmrig-nvidia $name && cd $name && cmake . && make
 
 # Create the bash script to execute Monero mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
