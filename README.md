@@ -120,6 +120,14 @@ Turtlecoin CPU miner for Linux
 ```
 wget -O /tmp/install-turtlecoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-cpu.sh && chmod +x /tmp/install-turtlecoin-cpu.sh && sudo /tmp/install-turtlecoin-cpu.sh
 ```
+Turtlecoin NVIDIA GPU miner for Linux
+```
+wget -O /tmp/install-turtlecoin-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-gpu-nvidia.sh && chmod +x /tmp/install-turtlecoin-gpu-nvidia.sh && sudo /tmp/install-turtlecoin-gpu-nvidia.sh
+```
+Turtlecoin AMD GPU miner for Linux
+```
+wget -O /tmp/install-turtlecoin-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-gpu-amd.sh && chmod +x /tmp/install-turtlecoin-gpu-amd.sh && sudo /tmp/install-turtlecoin-gpu-amd.sh
+```
 
 ### Bitcoin CPU Mining
 
