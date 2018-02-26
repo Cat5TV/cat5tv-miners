@@ -16,7 +16,7 @@ else
   wget -O /tmp/install-turtlecoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-cpu.sh && chmod +x /tmp/install-turtlecoin-cpu.sh && sudo /tmp/install-turtlecoin-cpu.sh
 
   # Install Bitcoin CPU miner
-  wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
+  wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-bitcoin-cpu.sh && sudo /tmp/install-bitcoin-cpu.sh
 
   wget -O /usr/local/share/cat5tv-miners/automine-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-cpu.sh && chmod +x /usr/local/share/cat5tv-miners/automine-cpu.sh
 
