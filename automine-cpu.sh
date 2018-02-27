@@ -23,6 +23,13 @@ do
       sleep 3600
     fi
     $executable& sleep $time; kill $!
+    if [[ $option = 'monero' ]] || [[ $option = 'turtlecoin' ]]; then
+      kill -HUP `pidof xmrig`
+    fi
+    if [[ $option = 'bitcoin' ]]; then
+      kill -HUP `pidof minerd`
+    fi
+
   done
 done
 
