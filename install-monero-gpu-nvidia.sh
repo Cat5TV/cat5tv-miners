@@ -18,9 +18,9 @@ name="${name%.*}"
 name=${name#install-}
 
 # Install dependencies
-apt update
-apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
-apt -y install nvidia-cuda-toolkit
+apt-get update
+apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
+apt-get -y install nvidia-cuda-toolkit
 
 # Make GCC 5 available as an alternative in Ubuntu (will cause errors in other distros but that's fine for now) so xmrig-nvidia can compile
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test

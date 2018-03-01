@@ -19,8 +19,8 @@ name="${name%.*}"
 name=${name#install-}
 
 # Install dependencies
-apt update
-apt -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
+apt-get update
+apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
 
 # Build XMRIG
 mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig && mv xmrig $name && cd $name && cmake . && make
