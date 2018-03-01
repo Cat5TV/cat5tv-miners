@@ -19,6 +19,7 @@ else
   wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-bitcoin-cpu.sh && sudo /tmp/install-bitcoin-cpu.sh
 
   wget -O /usr/local/share/cat5tv-miners/automine-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-cpu.sh && chmod +x /usr/local/share/cat5tv-miners/automine-cpu.sh
+  wget -O /usr/local/share/cat5tv-miners/stopmine.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/stopmine.sh && chmod +x /usr/local/share/cat5tv-miners/stopmine.sh
 
   echo ""
   echo If all went well, you should now run: /usr/local/share/cat5tv-miners/automine-cpu.sh
