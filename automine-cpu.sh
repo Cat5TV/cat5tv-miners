@@ -1,7 +1,7 @@
 #!/bin/bash
 timer=1; # how many hours before cycling currencies
 
-currencies="monero,turtlecoin,bitcoin" # CSV
+currencies="monero,turtlecoin" # CSV
 
 # Choose a random currency to begin with...
 random=( ${currencies//,/ } )
