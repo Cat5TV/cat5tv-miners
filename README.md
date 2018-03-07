@@ -47,6 +47,24 @@ Yes! A super low-powered system (such as a Raspberry Pi 3) would be pretty unusa
 
 All you have to do is install one or more of these miners to support the Category5 TV Network! Each miner is pre-configured to mine cryptocurrency into the appropriate Category5 wallet.
 
+### Automatic Miner
+
+The cat5tv-miners Automatic Miner will rotate between coins on a regular interval automatically. By running this software, your mining rig will, for example, mine Monero for a while, and then switch to mining Turtlecoin. By doing this, you help Category5 TV grow its crypto coin portfolio by spreading out the hashes between currencies, automatically.
+
+**Installation:**
+
+#### Automatic Miner For Linux
+
+Automatic CPU miner for Linux
+```
+wget -O /tmp/install-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-cpu.sh && chmod +x /tmp/install-cpu.sh && sudo /tmp/install-cpu.sh
+```
+
+**Commands:**
+
+To begin mining, run **/usr/local/share/cat5tv-miners/automine-cpu.sh**
+To stop mining, run **/usr/local/share/cat5tv-miners/stopmine.sh cpu**
+
 ### Monero Mining
 
 Monero is quite viable for mining using consumer gear, and should turn a profit over time. Therefore, *we recommend using our Monero miners to maximize results*.
