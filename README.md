@@ -62,8 +62,8 @@ wget -O /tmp/install-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-mine
 
 **Commands:**
 
-  * To begin mining, run **/usr/local/share/cat5tv-miners/automine-cpu.sh**
-  * To stop mining, run **/usr/local/share/cat5tv-miners/stopmine.sh cpu**
+  * To begin mining, run: **/usr/local/share/cat5tv-miners/automine-cpu.sh**
+  * To stop mining, run in another terminal window: **/usr/local/share/cat5tv-miners/stopmine.sh cpu**
 
 ### Monero Mining
 
