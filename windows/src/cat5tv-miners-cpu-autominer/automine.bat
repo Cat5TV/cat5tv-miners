@@ -1,11 +1,14 @@
 @echo off
 
-echo Press CTRL-C two or three times to close.
+echo.
+echo cat5tv-miners for Windows - AUTO MINER for CPU
+echo.
+echo Close this window or press CTRL-C to stop the loop.
 
-echo Press any key to switch to the next currency.
+echo Within the windows that open, you can also press CTRL-C to close them safely.
+echo Press any key within this window to abort the current countdown and switch to the next currency.
 
-echo ""
-
+echo.
 timeout /t 5 /nobreak > NUL
 
 
@@ -13,19 +16,15 @@ timeout /t 5 /nobreak > NUL
 :loop
 
 
-  set config=monero.cfg
-
-  start xmrig.exe %config%
-  timeout /t 10
-
+  set config=monero.conf
+  start xmrig.exe --config=%config%
+  timeout /t 3600
   taskkill /im xmrig.exe /f
 
 
-  set config=turtlecoin.cfg
-
-  start xmrig.exe %config%
-  timeout /t 10
-
+  set config=turtlecoin.conf
+  start xmrig.exe --config=%config%
+  timeout /t 3600
   taskkill /im xmrig.exe /f
 
 
