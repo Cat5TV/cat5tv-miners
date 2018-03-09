@@ -12,18 +12,32 @@ echo.
 timeout /t 5 /nobreak > NUL
 
 
+set "autominer=%cd%"
+
+set "autominer=%autominer:\=/%"
+
+
+echo %autominer%
+
+
+
+
+
+
+
+
 
 :loop
 
 
-  set config=monero.conf
-  start xmrig.exe --config=%config%
+  copy "%autominer%/monero.conf" "%autominer%/config.json"
+  start "" "%autominer%/xmrig.exe"
   timeout /t 3600
   taskkill /im xmrig.exe /f
 
 
-  set config=turtlecoin.conf
-  start xmrig.exe --config=%config%
+  copy "%autominer%/turtlecoin.conf" "%autominer%/config.json"
+  start "" "%autominer%/xmrig.exe"
   timeout /t 3600
   taskkill /im xmrig.exe /f
 
