@@ -104,7 +104,7 @@ An example of how you might run your miner from 11pm to 6am every day. In this e
 0 6 * * * kill -HUP `pidof xmrig` # Stop mining at 6am
 ```
 
-#### Monero Mining For Microsoft Windows
+#### Mining For Microsoft Windows
 
 As you've no doubt heard on the news, bad players have been integrating cryptocurrency mining into their viruses. This has had an unfortunate impact for legitimate miners in that Windows antimalware software will now report legitimate (non virus) cryptomining software as viruses. Because of this, you must first create an exclusion in order to install cat5tv-miners on Windows.
 
@@ -113,10 +113,11 @@ First, create a folder (say, on your desktop) and call it *cat5tv-mining* to mak
 At that point, if a screen pops up saying "Windows Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk." press "More Info" and "Run Anyway".
 
 Here are the installers for Windows:
- * [cat5tv-miners for CPU (64-bit)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-x64.exe)
- * [cat5tv-miners for GPU AMD](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-amd.exe)
- * [cat5tv-miners for GPU NVIDIA CUDA 8 (older cards)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda8.exe)
- * [cat5tv-miners for GPU NVIDIA CUDA 9 (newer cards)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda9.exe)
+ * [cat5tv-miners Auto Miner for CPU (64-bit)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-autominer-x64.exe) - Note: to run the autominer, you'll need to simply double click automine.bat in the installation folder (which you choose during install). The start menu shortcuts do not work for autominer.
+ * [cat5tv-miners Monero for CPU (64-bit)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-cpu-x64.exe)
+ * [cat5tv-miners Monero for GPU AMD](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-amd.exe)
+ * [cat5tv-miners Monero for GPU NVIDIA CUDA 8 (older cards)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda8.exe)
+ * [cat5tv-miners Monero for GPU NVIDIA CUDA 9 (newer cards)](https://github.com/Cat5TV/cat5tv-miners/raw/master/windows/compiled/cat5tv-miners-gpu-nvidia-cuda9.exe)
 
 cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmrig-amd/issues/23) for more information.
 
