@@ -1,5 +1,4 @@
 #!/bin/bash
-timer=1; # how many hours before cycling currencies
 
 currencies="monero,turtlecoin" # CSV
 
@@ -16,7 +15,16 @@ while :
 do
   for option in "${options[@]}"
   do
-    let time=timer*3600
+    # setup timers
+    timer=60 # a default value
+    if [[ $option = 'monero' ]]; then
+      timer=45; # how many minutes before cycling currencies
+    fi
+    if [[ $option = 'turtlecoin' ]]; then
+      timer=15; # how many minutes before cycling currencies
+    fi
+
+    let time=timer*60
     executable=/usr/local/share/cat5tv-miners/$option-cpu.sh
     if [[ ! -f $executable ]]; then
       echo You are missing the miner for $option. Please run: sudo ./install-$option-cpu.sh
