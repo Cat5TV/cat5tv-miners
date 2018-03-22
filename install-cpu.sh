@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 else
 
   if [[ -d /usr/local/share/cat5tv-miners ]]; then
-    rm -rf /usr/local/share/cat5tv-miners
+    #rm -rf /usr/local/share/cat5tv-miners
   fi
 
   # Install Monero CPU Miner
