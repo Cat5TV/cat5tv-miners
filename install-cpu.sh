@@ -5,9 +5,9 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
-  if [[ -d /usr/local/share/cat5tv-miners ]]; then
+  #if [[ -d /usr/local/share/cat5tv-miners ]]; then
     #rm -rf /usr/local/share/cat5tv-miners
-  fi
+  #fi
 
   # Install Monero CPU Miner
   wget -O /tmp/install-monero-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-cpu.sh && chmod +x /tmp/install-monero-cpu.sh && sudo /tmp/install-monero-cpu.sh
