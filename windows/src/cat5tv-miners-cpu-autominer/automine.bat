@@ -13,10 +13,8 @@ timeout /t 5 /nobreak > NUL
 
 
 set "autominer=%cd%"
-
-set "autominer=%autominer:\=/%"
-
-
+set "autominer=%autominer:\=/%"
+
 echo %autominer%
 
 
