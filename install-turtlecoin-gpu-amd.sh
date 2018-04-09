@@ -27,7 +27,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 # Create the bash script to execute Monero mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig-amd -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig-amd --algo=cryptonight-lite --variant=1 -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Monero type: $dest/$name.sh
