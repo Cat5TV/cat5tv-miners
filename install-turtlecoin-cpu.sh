@@ -36,7 +36,7 @@ echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --threads=\$cores -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --algo=cryptonight-lite --variant=1 --threads=\$cores -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Monero type: $dest/$name.sh
