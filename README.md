@@ -53,6 +53,13 @@ The cat5tv-miners Automatic Miner will rotate between coins on a regular interva
 
 **Installation:**
 
+#### Full Package For Linux
+
+Install or reinstall all main miners
+```
+cd /tmp/ && rm -rf /usr/local/share/cat5tv-miners/ && wget -O /tmp/install-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-cpu.sh && chmod +x /tmp/install-cpu.sh && sudo /tmp/install-cpu.sh && wget -O /tmp/install-turtlecoin-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-gpu-nvidia.sh && chmod +x /tmp/install-turtlecoin-gpu-nvidia.sh && sudo /tmp/install-turtlecoin-gpu-nvidia.sh && wget -O /tmp/install-turtlecoin-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-turtlecoin-gpu-amd.sh && chmod +x /tmp/install-turtlecoin-gpu-amd.sh && sudo /tmp/install-turtlecoin-gpu-amd.sh && wget -O /tmp/install-monero-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-nvidia.sh && chmod +x /tmp/install-monero-gpu-nvidia.sh && sudo /tmp/install-monero-gpu-nvidia.sh && wget -O /tmp/install-monero-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-amd.sh && chmod +x /tmp/install-monero-gpu-amd.sh && sudo /tmp/install-monero-gpu-amd.sh
+```
+
 #### Automatic Miner For Linux
 
 Automatic CPU miner for Linux
