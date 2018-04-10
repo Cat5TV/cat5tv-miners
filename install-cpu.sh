@@ -5,6 +5,12 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
+  # Enable hugepages
+    # Ubuntu
+    sysctl -w vm.nr_hugepages=128
+    # Debian
+    # SEE https://wiki.debian.org/Hugepages#Enabling_HugeTlbPage
+    
   #if [[ -d /usr/local/share/cat5tv-miners ]]; then
     #rm -rf /usr/local/share/cat5tv-miners
   #fi
