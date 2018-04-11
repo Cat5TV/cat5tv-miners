@@ -1,6 +1,6 @@
 #!/bin/bash
 
-currencies="monero,turtlecoin" # CSV
+currencies="monero,turtlecoin,stellite" # CSV
 
 # Choose a random currency to begin with...
 random=( ${currencies//,/ } )
@@ -21,6 +21,9 @@ do
       timer=45; # how many minutes before cycling currencies
     fi
     if [[ $option = 'turtlecoin' ]]; then
+      timer=15; # how many minutes before cycling currencies
+    fi
+    if [[ $option = 'stellite' ]]; then
       timer=15; # how many minutes before cycling currencies
     fi
 
