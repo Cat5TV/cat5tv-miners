@@ -20,6 +20,8 @@ Point your miner to our wallet to support the Category5 TV Network:
     Monero XMR: 45Pp6nKwfHwXegzi7DiLGZFKSs2doNXJbGS1d5Dej9VJNhcShW7XYysHGS7zSTSwToSWs3nQxtzweW8ajRvoWTLKTwmGY3a
     
     Turtlecoin TRTL: TRTLv1jdGp39FVqQRAgwM1jPyV2ZjhELDinfjEypobvP4Sbfr58aLjZ1kmoaen1Rr292h9zP9V8uB8GV7iHnEXyrjeFGZFsFERf
+    
+    Stellite XTL: Se2KkBLzvq1aCoWejspCCUWqgfHRSdZ6f15Xx4xtb26ZMQPeLj6p3oriUhM4eWmgbQVssfieyQhAga97rdWj6wxj2zbai8VhY
 
 ## Quick Thoughts
 
