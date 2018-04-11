@@ -27,14 +27,14 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 
 # Create the bash script to execute Monero mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
+echo "port=6688 # For SBC/Up to 40 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"8\" ]; then
   let cores=cores-1 # Leave 1 core free for GPU mining
 fi" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
-  port=5555 # For medium-grade hardware (~200 H/s)
+  port=6688 # For medium-grade hardware (~160 H/s)
 fi" >> $dest/$name.sh
 echo "$dest/software/$name/xmrig --algo=cryptonight --variant=1 --threads=\$cores -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
