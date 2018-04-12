@@ -42,10 +42,16 @@ if [[ $1 = 'gpu' ]]; then
     echo Stopped process "xmrig-amd"
   fi
 
-  if pgrep -x "automine-gpu.sh" > /dev/null
+  if pgrep -x "automine-gpu-nvidia.sh" > /dev/null
   then
-    killall -9 automine-gpu.sh
-    echo Stopped process "automine-gpu.sh"
+    killall -9 automine-gpu-nvidia.sh
+    echo Stopped process "automine-gpu-nvidia.sh"
+  fi
+  
+  if pgrep -x "automine-gpu-amd.sh" > /dev/null
+  then
+    killall -9 automine-gpu-amd.sh
+    echo Stopped process "automine-gpu-amd.sh"
   fi
 
 fi
