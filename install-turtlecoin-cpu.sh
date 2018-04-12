@@ -25,7 +25,7 @@ apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-
 # Build XMRIG
 mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig && mv xmrig $name && cd $name && cmake . && make
 
-# Create the bash script to execute Monero mining to Category5's wallet
+# Create the bash script to execute Turtlecoin mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
@@ -39,6 +39,6 @@ fi" >> $dest/$name.sh
 echo "$dest/software/$name/xmrig --algo=cryptonight-lite --variant=1 --threads=\$cores -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
-echo Done. To begin mining Monero type: $dest/$name.sh
+echo Done. To begin mining Turtlecoin type: $dest/$name.sh
 
 fi

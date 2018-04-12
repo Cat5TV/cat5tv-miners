@@ -25,7 +25,7 @@ apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-
 # Build XMRIG
 mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig && mv xmrig $name && cd $name && cmake . && make
 
-# Create the bash script to execute Monero mining to Category5's wallet
+# Create the bash script to execute Stellite mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=6677 # For SBC/Up to 40 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
