@@ -5,6 +5,11 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
+ # Just in case apt is already doing stuff in the background, hang tight until it completes
+ echo "Please wait for apt tasks to complete..."
+ while fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 2>&1; do sleep 1; done
+ echo "Done."
+ 
   # Enable hugepages
     # Ubuntu
     sysctl -w vm.nr_hugepages=128
