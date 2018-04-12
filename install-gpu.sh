@@ -22,6 +22,8 @@ else
   wget -O /usr/local/share/cat5tv-miners/stopmine.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/stopmine.sh && chmod +x /usr/local/share/cat5tv-miners/stopmine.sh
 
   echo ""
-  echo If all went well, you should now run: /usr/local/share/cat5tv-miners/automine-cpu.sh
+  echo If all went well, you should now run:
+  echo Nvidia Cards: /usr/local/share/cat5tv-miners/automine-gpu-nvidia.sh
+  echo AMD Cards: /usr/local/share/cat5tv-miners/automine-gpu-amd.sh
 
 fi
