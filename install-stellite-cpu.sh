@@ -27,7 +27,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 
 # Create the bash script to execute Monero mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "port=6688 # For SBC/Up to 40 H/s" >> $dest/$name.sh
+echo "port=6677 # For SBC/Up to 40 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"8\" ]; then
   let cores=cores-1 # Leave 1 core free for GPU mining
