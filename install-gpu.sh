@@ -18,7 +18,8 @@ else
   wget -O /tmp/install-stellite-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-stellite-gpu-amd.sh && chmod +x /tmp/install-stellite-gpu-amd.sh && sudo /tmp/install-stellite-gpu-amd.sh
 
   # Grab the launchers
-  wget -O /usr/local/share/cat5tv-miners/automine-gpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-gpu.sh && chmod +x /usr/local/share/cat5tv-miners/automine-gpu.sh
+  wget -O /usr/local/share/cat5tv-miners/automine-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-gpu-nvidia.sh && chmod +x /usr/local/share/cat5tv-miners/automine-gpu-nvidia.sh
+  wget -O /usr/local/share/cat5tv-miners/automine-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-gpu-amd.sh && chmod +x /usr/local/share/cat5tv-miners/automine-gpu-amd.sh
   wget -O /usr/local/share/cat5tv-miners/stopmine.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/stopmine.sh && chmod +x /usr/local/share/cat5tv-miners/stopmine.sh
 
   echo ""
