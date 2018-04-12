@@ -28,13 +28,13 @@ do
     fi
 
     let time=timer*60
-    executable=/usr/local/share/cat5tv-miners/$option-cpu.sh
+    executable=/usr/local/share/cat5tv-miners/$option-gpu-amd.sh
     if [[ ! -f $executable ]]; then
-      echo You are missing the miner for $option. Please run: sudo ./install-$option-cpu.sh
+      echo You are missing the miner for $option. Please run: sudo ./install-$option-gpu-amd.sh
       sleep 3600
     fi
     $executable& sleep $time; kill $!
-    kill -HUP `pidof xmrig`
+    kill -HUP `pidof xmrig-amd`
 
   done
 done
