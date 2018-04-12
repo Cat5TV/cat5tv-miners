@@ -5,6 +5,11 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
+ # Just in case apt is already doing stuff in the background, hang tight until it completes
+ echo "Please wait for apt tasks to complete..."
+ while fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 2>&1; do sleep 1; done
+ echo "Done."
+
   # Install Monero GPU Miners
   wget -O /tmp/install-monero-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-nvidia.sh && chmod +x /tmp/install-monero-gpu-nvidia.sh && sudo /tmp/install-monero-gpu-nvidia.sh
   wget -O /tmp/install-monero-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-amd.sh && chmod +x /tmp/install-monero-gpu-amd.sh && sudo /tmp/install-monero-gpu-amd.sh
