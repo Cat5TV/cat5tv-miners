@@ -17,16 +17,13 @@ name=$(basename $0)
 name="${name%.*}"
 name=${name#install-}
 
-echo 
-echo $name
-echo 
-exit
 # Install dependencies
 apt-get update
 apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev opencl-headers ocl-icd-opencl-dev
 
 # Build XMRIG
-mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmrig/xmrig-amd && mv xmrig-amd $name && cd $name && cmake . && make
+mkdir -p $dest/software
+cd $dest/software && git clone https://github.com/xmrig/xmrig-amd && mv xmrig-amd $name && cd $name && cmake . && make
 
 # Create the bash script to execute Stellite mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
