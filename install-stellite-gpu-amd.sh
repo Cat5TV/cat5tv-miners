@@ -17,6 +17,10 @@ name=$(basename $0)
 name="${name%.*}"
 name=${name#install-}
 
+echo 
+echo $name
+echo 
+exit
 # Install dependencies
 apt-get update
 apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev opencl-headers ocl-icd-opencl-dev
