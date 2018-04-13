@@ -1,7 +1,12 @@
 # cat5tv-miners
 Mine cryptocurrency in support of the Category5.TV Network
 
-**Our focus is on Monero** because it can be mined using consumer hardware (ie., CPU / GPU mining). [Litecoin cannot be mined by this method](https://www.litecoinpool.org/beginners-guide#should-you-mine) and we suspect the same is pretty much true with BitCoin, although I have included a CPU miner for BitCoin as a proof of concept.
+NEW INSTALLER:
+```
+wget -O /tmp/install-all.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-all.sh && chmod +x /tmp/install-all.sh && sudo /tmp/install-all.sh
+```
+
+**Our focus is on cryptocurrencies easily mined with consumer hardware** (ie., CPU / GPU mining). [Litecoin cannot be mined by this method](https://www.litecoinpool.org/beginners-guide#should-you-mine) and we suspect the same is pretty much true with BitCoin, although I have included a CPU miner for BitCoin as a proof of concept.
 
 In my initial tests I ran cat5tv-miners on a few of my own standard desktop computers plus some Raspberry Pi 3's and a couple other small devices and was mining ~$3.50 USD or so per week. So with enough of the community running this, we'll definitely be able to support Cat5.
 
