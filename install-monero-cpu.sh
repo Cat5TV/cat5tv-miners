@@ -36,7 +36,7 @@ echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:\$port -u $wallet -p cat5tv:x -k --donate-level=25" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --threads=\$cores -o pool.monero.hashvault.pro:\$port -u $wallet -p cat5tv:x -k" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Monero type: $dest/$name.sh
