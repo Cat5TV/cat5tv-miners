@@ -36,7 +36,7 @@ echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=6688 # For medium-grade hardware (~160 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --algo=cryptonight --variant=1 --threads=\$cores -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv -k --donate-level=25" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --algo=cryptonight --variant=1 --threads=\$cores -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv -k" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Stellite type: $dest/$name.sh
