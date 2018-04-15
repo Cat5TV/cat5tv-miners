@@ -23,7 +23,9 @@ else
   echo
   echo If all went well you can now run your cat5tv-miners with the following:
   echo CPU Miner: /usr/local/share/cat5tv-miners/automine-cpu.sh
-  echo GPU Miner: /usr/local/share/cat5tv-miners/automine-gpu.sh
+  echo GPU Miner:
+  echo     Nvidia: /usr/local/share/cat5tv-miners/automine-gpu-nvidia.sh
+  echo     AMD:    /usr/local/share/cat5tv-miners/automine-gpu-amd.sh
   echo
   echo "To stop mining use: /usr/local/share/cat5tv-miners/stopmine.sh [cpu|gpu]"
   echo
