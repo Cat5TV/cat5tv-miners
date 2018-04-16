@@ -44,13 +44,13 @@ if [[ $1 = 'gpu' ]]; then
 
   if pgrep -x "automine-gpu-nvidia.sh" > /dev/null
   then
-    killall -9 automine-gpu-nvidia.sh
+    kill `/bin/ps -fu $USER| grep "automine-gpu-nvidia.sh" | grep -v "grep" | awk '{print $2}'`
     echo Stopped process "automine-gpu-nvidia.sh"
   fi
   
   if pgrep -x "automine-gpu-amd.sh" > /dev/null
   then
-    killall -9 automine-gpu-amd.sh
+    kill `/bin/ps -fu $USER| grep "automine-gpu-amd.sh" | grep -v "grep" | awk '{print $2}'`
     echo Stopped process "automine-gpu-amd.sh"
   fi
 
