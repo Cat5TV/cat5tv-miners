@@ -42,15 +42,17 @@ if [[ $1 = 'gpu' ]]; then
     echo Stopped process "xmrig-amd"
   fi
 
-  if pgrep -x "automine-gpu-nvidia.sh" > /dev/null
+  pidnvidia=`/bin/ps -fu $USER| grep "automine-gpu-nvidia.sh" | grep -v "grep" | awk '{print $2}'`
+  if [[ ! -z $pidnvidia ]]
   then
-    kill `/bin/ps -fu $USER| grep "automine-gpu-nvidia.sh" | grep -v "grep" | awk '{print $2}'`
+    kill $pidnvidia
     echo Stopped process "automine-gpu-nvidia.sh"
   fi
-  
-  if pgrep -x "automine-gpu-amd.sh" > /dev/null
+
+  pidamd=`/bin/ps -fu $USER| grep "automine-gpu-amd.sh" | grep -v "grep" | awk '{print $2}'`
+  if [[ ! -z $pidamd ]]
   then
-    kill `/bin/ps -fu $USER| grep "automine-gpu-amd.sh" | grep -v "grep" | awk '{print $2}'`
+    kill $pidamd
     echo Stopped process "automine-gpu-amd.sh"
   fi
 
