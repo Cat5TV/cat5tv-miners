@@ -44,7 +44,7 @@ A CPU miner and GPU miner can be used simultaneously to maximize the hashrate. E
 
 ### How much Internet bandwidth will this use?
 
-Barely any. Mining uses your GPU and/or CPU to find hashes, which are sent to the pool. The amount of data being trnasmitted and received is minimal. We are not at all concerned about running this on our mobile connection.
+Barely any. Mining uses your GPU and/or CPU to find hashes, which are sent to the pool. The amount of data being transmitted and received is minimal. We are not at all concerned about running this on our mobile connection.
 
 ### Can I continue using my computer while mining for you?
 
@@ -139,7 +139,7 @@ cat5tv-miners uses xmrig. Please read [this thread](https://github.com/xmrig/xmr
 
 TRTL is now supported!
 
-Turtlecoin is very viable for mining using consumer gear, and should turn a profit over time. Because it is so new and there are so many Turtlecoin available, we are guaranteed to get coin even if you are using very low-end hardware such as a Raspberry Pi 3. As TRTL gains in popularity, it could become worth more, meaning the coins we mine today may end up being worth someone in the future.
+Turtlecoin is very viable for mining using consumer gear, and should turn a profit over time. Because it is so new and there are so many Turtlecoin available, we are guaranteed to get coin even if you are using very low-end hardware such as a Raspberry Pi 3. As TRTL gains in popularity, it could become worth more, meaning the coins we mine today may end up being worth more in the future.
 
 **Currency:** Turtlecoin
 
