@@ -30,7 +30,7 @@ else
   wget -O /tmp/install-stellite-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-stellite-cpu.sh && chmod +x /tmp/install-stellite-cpu.sh && sudo /tmp/install-stellite-cpu.sh
 
   # Install Bitcoin CPU miner
-#  wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-bitcoin-cpu.sh && sudo /tmp/install-bitcoin-cpu.sh
+  wget -O /tmp/install-bitcoin-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-cpu.sh && chmod +x /tmp/install-bitcoin-cpu.sh && sudo /tmp/install-bitcoin-cpu.sh
 
   wget -O /usr/local/share/cat5tv-miners/automine-cpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/automine-cpu.sh && chmod +x /usr/local/share/cat5tv-miners/automine-cpu.sh
   wget -O /usr/local/share/cat5tv-miners/stopmine.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/stopmine.sh && chmod +x /usr/local/share/cat5tv-miners/stopmine.sh
