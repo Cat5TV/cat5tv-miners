@@ -1,6 +1,6 @@
 #!/bin/bash
 
-currencies="monero,turtlecoin,stellite" # CSV
+currencies="monero,turtlecoin,stellite,bitcoin" # CSV
 
 # Choose a random currency to begin with...
 random=( ${currencies//,/ } )
@@ -18,15 +18,18 @@ do
     # setup timers
     timer=60 # a default value
     if [[ $option = 'monero' ]]; then
-      timer=45; # how many minutes before cycling currencies
+      timer=60; # how many minutes before cycling currencies
     fi
     if [[ $option = 'turtlecoin' ]]; then
-      timer=15; # how many minutes before cycling currencies
+      timer=30; # how many minutes before cycling currencies
     fi
     if [[ $option = 'stellite' ]]; then
       timer=15; # how many minutes before cycling currencies
     fi
-
+    if [[ $option = 'bitcoin' ]]; then
+      timer=60; # how many minutes before cycling currencies
+    fi
+    
     let time=timer*60
     executable=/usr/local/share/cat5tv-miners/$option-cpu.sh
     if [[ ! -f $executable ]]; then
