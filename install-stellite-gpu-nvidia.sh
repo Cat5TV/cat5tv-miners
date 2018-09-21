@@ -34,7 +34,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 # Create the bash script to execute Stellite mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=6688" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig-nvidia --algo=cryptonight --variant=1 -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig-nvidia --algo=cryptonight --variant=xtl -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv:x -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Stellite type: $dest/$name.sh
