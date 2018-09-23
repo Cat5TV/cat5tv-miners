@@ -38,6 +38,7 @@ do
     fi
     $executable& sleep $time; kill $!
     kill -HUP `pidof xmrig`
+    kill -HUP `pidof minerd`
 
   done
 done
