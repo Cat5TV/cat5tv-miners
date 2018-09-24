@@ -26,8 +26,13 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/poo
 
 # Create the bash script to execute mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "cores=$(nproc --all)" >> $dest/$name.sh
-echo "let cores=cores-2" >> $dest/$name.sh
+echo "cores=\$(nproc --all)" >> $dest/$name.sh
+echo "if [ \"\$cores\" -ge \"8\" ]; then
+  let cores=cores-1 # Leave 1 core free for GPU mining
+fi" >> $dest/$name.sh
+echo "if [ \"\$cores\" -ge \"12\" ]; then
+  let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
+fi" >> $dest/$name.sh
 echo "$dest/software/$name/minerd --threads=\$cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
