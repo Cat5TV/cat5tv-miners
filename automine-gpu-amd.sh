@@ -36,6 +36,7 @@ do
       echo You are missing the miner for $option. Please run: sudo ./install-$option-gpu-amd.sh
       sleep 3600
     fi
+    echo Mining $option ...
     $executable& sleep $time; kill $!
     kill -HUP `pidof xmrig-amd`
 

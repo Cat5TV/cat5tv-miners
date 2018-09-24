@@ -30,6 +30,12 @@ fi
 
 if [[ $1 = 'gpu' ]]; then
 
+  if pgrep -x "cgminer" > /dev/null
+  then
+    kill -HUP `pidof cgminer`
+    echo Stopped process "cgminer"
+  fi
+
   if pgrep -x "xmrig-nvidia" > /dev/null
   then
     kill -HUP `pidof xmrig-nvidia`

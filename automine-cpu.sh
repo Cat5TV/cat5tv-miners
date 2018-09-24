@@ -36,6 +36,7 @@ do
       echo You are missing the miner for $option. Please run: sudo ./install-$option-cpu.sh
       sleep 3600
     fi
+    echo Mining $option ...
     $executable& sleep $time; kill $!
     kill -HUP `pidof xmrig`
     kill -HUP `pidof minerd`
