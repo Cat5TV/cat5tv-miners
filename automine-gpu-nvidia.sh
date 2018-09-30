@@ -39,6 +39,7 @@ do
     echo Mining $option ...
     $executable& sleep $time; kill $!
     kill -HUP `pidof xmrig-nvidia`
-    
+    kill -HUP `pidof cgminer`
+
   done
 done
