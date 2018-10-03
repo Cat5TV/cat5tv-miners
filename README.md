@@ -16,7 +16,7 @@ You can run the miner or cancel it at any time. If it affects performance, you c
 
 Point your miner to our wallet to support the Category5 TV Network:
 
-    Bitcoin BTC: 195GBesssNtvs7nKAiNAvGXC4FJCDt9nfj
+    Bitcoin BTC: 16HzSLcjLZPMigkKSEJaKFR3acAZrygU6J
 
     Ethereum ETH: 0xFc412c637fB89a860209f448173AF1EB285458E9
 
