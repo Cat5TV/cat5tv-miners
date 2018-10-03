@@ -14,7 +14,7 @@ You can run the miner or cancel it at any time. If it affects performance, you c
 
 ## Already Mining?
 
-Point your miner to our wallet to support the Category5 TV Network:
+Direct donations are accepted to:
 
     Bitcoin BTC: 16HzSLcjLZPMigkKSEJaKFR3acAZrygU6J
 
@@ -27,6 +27,8 @@ Point your miner to our wallet to support the Category5 TV Network:
     Turtlecoin TRTL: TRTLv1jdGp39FVqQRAgwM1jPyV2ZjhELDinfjEypobvP4Sbfr58aLjZ1kmoaen1Rr292h9zP9V8uB8GV7iHnEXyrjeFGZFsFERf
     
     Stellite XTL: Se2KkBLzvq1aCoWejspCCUWqgfHRSdZ6f15Xx4xtb26ZMQPeLj6p3oriUhM4eWmgbQVssfieyQhAga97rdWj6wxj2zbai8VhY
+
+Please note, you may also point your own miner to our wallet to support the Category5 TV Network. However, if you are using a different pool than us, you will need to achieve the payout threshold in order for this to work. By using one of the pools we are already mining to, you will not have to meet any minimums to support us (as your hashes will be combined with other users).
 
 ## Quick Thoughts
 
