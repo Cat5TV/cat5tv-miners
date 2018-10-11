@@ -16,6 +16,14 @@ name=$(basename $0)
 name="${name%.*}"
 name=${name#install-}
 
+# Load or generate a unique miner ID for this user
+if [[ -f /tmp/cat5tv-miners.mid ]]; then
+  worker=$(cat /tmp/cat5tv-miners.mid)-GPU
+else
+  echo CAT5TV-$RANDOM > /tmp/cat5tv-miners.mid
+  worker=$(cat /tmp/cat5tv-miners.mid)-GPU
+fi
+
 # Install dependencies
 apt-get update
 apt -y install libtool
@@ -25,7 +33,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/cko
 
 # Create the bash script to execute mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "$dest/software/$name/cgminer -o stratum+tcp://mint.bitminter.com:3333 -u cat5tv_cat5tv -p cat5tv" >> $dest/$name.sh
+echo "$dest/software/$name/cgminer -o stratum+tcp://mint.bitminter.com:3333 -u cat5tv_cat5tv -p $worker" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 # Create pseudo scripts since bitcoin GPU mining is same for AMD and NVIDIA

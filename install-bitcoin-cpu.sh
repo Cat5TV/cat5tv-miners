@@ -17,6 +17,14 @@ name=$(basename $0)
 name="${name%.*}"
 name=${name#install-}
 
+# Load or generate a unique miner ID for this user
+if [[ -f /tmp/cat5tv-miners.mid ]]; then
+  worker=$(cat /tmp/cat5tv-miners.mid)-CPU
+else
+  echo CAT5TV-$RANDOM > /tmp/cat5tv-miners.mid
+  worker=$(cat /tmp/cat5tv-miners.mid)-CPU
+fi
+
 # Install dependencies
 apt-get update
 apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev
@@ -33,7 +41,7 @@ fi" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/minerd --threads=\$cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:cat5tv" >> $dest/$name.sh
+echo "$dest/software/$name/minerd --threads=\$cores -a sha256d --url=stratum+tcp://mint.bitminter.com:3333 --userpass=cat5tv_cat5tv:$worker" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Bitcoin type: $dest/$name.sh

@@ -9,7 +9,7 @@ else
  echo "Please wait for apt tasks to complete..."
  while fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 2>&1; do sleep 1; done
  echo "Done."
- 
+
   # Enable hugepages
     # Ubuntu
     sysctl -w vm.nr_hugepages=128

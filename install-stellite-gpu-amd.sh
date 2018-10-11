@@ -17,6 +17,14 @@ name=$(basename $0)
 name="${name%.*}"
 name=${name#install-}
 
+# Load or generate a unique miner ID for this user
+if [[ -f /tmp/cat5tv-miners.mid ]]; then
+  worker=$(cat /tmp/cat5tv-miners.mid)-GPU
+else
+  echo CAT5TV-$RANDOM > /tmp/cat5tv-miners.mid
+  worker=$(cat /tmp/cat5tv-miners.mid)-GPU
+fi
+
 # Install dependencies
 apt-get update
 apt-get -y install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libz-dev git build-essential cmake libuv1-dev libmicrohttpd-dev opencl-headers ocl-icd-opencl-dev
@@ -28,7 +36,7 @@ cd $dest/software && git clone https://github.com/xmrig/xmrig-amd && mv xmrig-am
 # Create the bash script to execute Stellite mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
 echo "port=6688" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig-amd --algo=cryptonight --variant=xtl -o communitypool.stellite.cash:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig-amd --algo=cryptonight --variant=xtl -o communitypool.stellite.cash:\$port -u $wallet -p $worker -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Stellite type: $dest/$name.sh

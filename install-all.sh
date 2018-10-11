@@ -9,7 +9,10 @@ else
  echo "Please wait for apt tasks to complete..."
  while fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 2>&1; do sleep 1; done
  echo "Done."
- 
+
+  # Generate a unique miner ID for this user
+  echo CAT5TV-$RANDOM > /tmp/cat5tv-miners.mid
+
   if [[ -d /usr/local/share/cat5tv-miners ]]; then
     rm -rf /usr/local/share/cat5tv-miners
   fi
