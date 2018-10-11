@@ -26,8 +26,8 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/xmr
 
 # Create the bash script to execute Turtlecoin mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig-amd --algo=cryptonight-lite --variant=1 -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
+echo "port=5555" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig-amd --algo=cryptonight-lite --variant=1 -o trtl.pool.mine2gether.com:\$port -u $wallet -p cat5tv -k --donate-level=1" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Turtlecoin type: $dest/$name.sh

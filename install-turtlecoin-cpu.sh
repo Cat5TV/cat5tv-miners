@@ -27,7 +27,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/Cat
 
 # Create the bash script to execute Turtlecoin mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "port=3333 # For SBC/Up to 100 H/s" >> $dest/$name.sh
+echo "port=2223 # For SBC/Up to 100 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"8\" ]; then
   let cores=cores-1 # Leave 1 core free for GPU mining
@@ -36,7 +36,7 @@ echo "if [ \"\$cores\" -ge \"12\" ]; then
   let cores=cores-1 # Leave 2 cores free for GPU mining (yes, -1 because we already -1 above)
   port=5555 # For medium-grade hardware (~200 H/s)
 fi" >> $dest/$name.sh
-echo "$dest/software/$name/xmrig --algo=cryptonight-lite --variant=1 --threads=\$cores -o turtle.mining.garden:\$port -u $wallet -p cat5tv -k" >> $dest/$name.sh
+echo "$dest/software/$name/xmrig --algo=cryptonight-lite --variant=1 --threads=\$cores -o trtl.pool.mine2gether.com:\$port -u $wallet -p cat5tv -k" >> $dest/$name.sh
 chmod +x $dest/$name.sh
 
 echo Done. To begin mining Turtlecoin type: $dest/$name.sh

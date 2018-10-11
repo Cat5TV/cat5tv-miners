@@ -145,7 +145,7 @@ Turtlecoin is very viable for mining using consumer gear, and should turn a prof
 
 **Currency:** Turtlecoin
 
-**Mining Pool:** turtle.mining.garden
+**Mining Pool:** trtl.pool.mine2gether.com
 
 **Installation:**
 
