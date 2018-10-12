@@ -35,7 +35,7 @@ mkdir -p $dest/software && cd $dest/software && git clone https://github.com/Cat
 
 # Create the bash script to execute Turtlecoin mining to Category5's wallet
 echo "#!/bin/bash" > $dest/$name.sh
-echo "port=2223 # For SBC/Up to 100 H/s" >> $dest/$name.sh
+echo "port=2225 # For SBC/Up to 100 H/s" >> $dest/$name.sh
 echo "cores=\$(nproc --all)" >> $dest/$name.sh
 echo "if [ \"\$cores\" -ge \"8\" ]; then
   let cores=cores-1 # Leave 1 core free for GPU mining
