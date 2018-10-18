@@ -14,6 +14,10 @@ else
   # Same miner for AMD and NVIDIA
   wget -O /tmp/install-bitcoin-gpu.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-bitcoin-gpu.sh && chmod +x /tmp/install-bitcoin-gpu.sh && sudo /tmp/install-bitcoin-gpu.sh
 
+  # Install Ethereum GPU Miners
+  wget -O /tmp/install-ethereum-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-ethereum-gpu-amd.sh && chmod +x /tmp/install-ethereum-gpu-amd.sh && sudo /tmp/install-ethereum-gpu-amd.sh
+  wget -O /tmp/install-ethereum-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-ethereum-gpu-nvidia.sh && chmod +x /tmp/install-ethereum-gpu-nvidia.sh && sudo /tmp/install-ethereum-gpu-nvidia.sh
+
   # Install Monero GPU Miners
   wget -O /tmp/install-monero-gpu-nvidia.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-nvidia.sh && chmod +x /tmp/install-monero-gpu-nvidia.sh && sudo /tmp/install-monero-gpu-nvidia.sh
   wget -O /tmp/install-monero-gpu-amd.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-monero-gpu-amd.sh && chmod +x /tmp/install-monero-gpu-amd.sh && sudo /tmp/install-monero-gpu-amd.sh

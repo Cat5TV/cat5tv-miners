@@ -17,6 +17,9 @@ do
   do
     # setup timers
     timer=60 # a default value
+    if [[ $option = 'ethereum' ]]; then
+      timer=45; # how many minutes before cycling currencies
+    fi
     if [[ $option = 'bitcoin' ]]; then
       timer=45; # how many minutes before cycling currencies
     fi
@@ -40,6 +43,7 @@ do
     $executable& sleep $time; kill $!
     kill -HUP `pidof xmrig-nvidia`
     kill -HUP `pidof cgminer`
+    kill -HUP `pidof ethminer`
 
   done
 done
