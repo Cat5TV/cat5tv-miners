@@ -6,13 +6,13 @@ NEW INSTALLER:
 wget -O /tmp/install-all.sh https://raw.githubusercontent.com/Cat5TV/cat5tv-miners/master/install-all.sh && chmod +x /tmp/install-all.sh && sudo /tmp/install-all.sh
 ```
 
-**Our focus is on cryptocurrencies easily mined with consumer hardware** (ie., CPU / GPU mining). [Litecoin cannot be mined by this method](https://www.litecoinpool.org/beginners-guide#should-you-mine) and we suspect the same is pretty much true with BitCoin, although I have included a CPU miner for BitCoin as a proof of concept.
+**Our focus is on cryptocurrencies easily mined with consumer hardware** (ie., CPU / GPU mining). [Litecoin cannot be mined by this method](https://www.litecoinpool.org/beginners-guide#should-you-mine) and the same is true with BitCoin, although I have included a CPU miner for BitCoin as a proof of concept. It's really a huge waste of resources though, so don't use it. In my tests, I ran it for a few months on my rig and got less than $0.01 USD in BTC. Yes, you read that right.
 
 In my initial tests I ran cat5tv-miners on a few of my own standard desktop computers plus some Raspberry Pi 3's and a couple other small devices and was mining ~$3.50 USD or so per week. So with enough of the community running this, we'll definitely be able to support Cat5.
 
 You can run the miner or cancel it at any time. If it affects performance, you can close it and go about your work and then open it when your computer would otherwise be idle. Though on my computers I find I'm still able to continue using the computer just fine when running the CPU miner. The GPU miner tends to take over the graphics, so my compositor locks up while it is running.
 
-## Already Mining?
+## Already Mining / Investing?
 
 Direct donations are accepted to:
 

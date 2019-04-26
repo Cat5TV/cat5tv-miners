@@ -1,6 +1,6 @@
 #!/bin/bash
 
-currencies="monero,turtlecoin,stellite,bitcoin" # CSV
+currencies="monero,turtlecoin,stellite" # CSV
 
 # Choose a random currency to begin with...
 random=( ${currencies//,/ } )
